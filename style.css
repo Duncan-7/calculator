@@ -1,0 +1,112 @@
+@font-face {
+    font-family: digitalscreen;
+    src: url(fonts/digital-7.ttf);
+}
+
+.container {
+    width: 400px;
+    height: 600px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:0px;
+    background-color: #E94F37;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
+.grid-container {
+    width: 350px;
+    height: 550px;
+    padding: 25px;
+    grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+    display: grid;
+    grid-gap: 15px 8px;
+    grid-template-areas:
+    "screen screen screen screen"
+    "one two three addition"
+    "four five six subtract"
+    "seven eight nine multiply"
+    "reset zero equals divide"
+}
+
+.screen {
+    background-color: rgb(68, 187, 68);
+    grid-area: screen;
+    border-radius: 10px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 25px;
+    font-size: 60px;
+    font-family: digitalscreen;
+}
+
+.button {
+    border: 1px solid #50575B;
+    border-radius: 5px;
+    color: #F6F7EB;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.function {
+    background-color: #413f3f;
+}
+
+.number {
+    background-color: #928f8f;
+}
+
+#1 {
+    grid-area: one;
+}
+#2 {
+    grid-area: two;
+}
+#3 {
+    grid-area: three;
+}
+#add {
+    grid-area: addition;
+}
+#4 {
+    grid-area: four;
+}
+#5 {
+    grid-area: five;
+}
+#6 {
+    grid-area: six;
+}
+#subtract {
+    grid-area: subtract;
+}
+#7 {
+    grid-area: seven;
+}
+#8 {
+    grid-area: eight;
+}
+#9 {
+    grid-area: nine;
+}
+#multiply {
+    grid-area: multiply;
+}
+#reset {
+    grid-area: reset;
+}
+#0 {
+    grid-area: zero;
+}
+#equals {
+    grid-area: equals;
+}
+#divide {
+    grid-area: divide;
+}
